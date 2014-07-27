@@ -1,0 +1,68 @@
+<div class="staticBar" style="background-color:#70B8FF; left:0%; width:98%"><h1>Creations</h1></div>
+			<div class="content" id="main-body">
+				<div class="content" id="sizedPost">
+					<div class="question" ><b>Lost Hope</b></div>
+					<div class="answer" ><b></b>Lost Hope is a project dreamt up by the members of Square Infinity, a company of which I am a founding partner.<img src="images/lostHopeTitle.jpg" style="width:200px;float:right"></img> 
+						The game, taking elements from <a href="www.minecraft.net">Minecraft</a> and <a href="www.terraria.org">Terarria</a>, seeks to take the limitless, sandbox experience and add elements of story while pumping in an even greater 
+						array of creativity than other games of the genre. As part of this project, I worked solely on one of the larger classes which controlled the random 
+						<img src="images/LostHopeScreen3.png" style="float:left;width:200px;"></img>generation of the world. I created a class system which created a four-sided, square world randomly populated with dirt, stone, caves, ore, and more.
+						Along with this, I created a class hierarchy for the various animals populating the world of Lost Hope. This meant working with some basic AI and a modification
+						of the decorator design pattern.</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Take The Tower</b></div>
+					<div class="answer"><img src="images/UT Tower Prototype.jpg" style="float:right;width:200px;"></img><a href="www.facebook.com/takethetower">Take the Tower</a> is Square Infinity's current project, contracted with the University of Texas. This app, coming soon to Android and iOS, displays
+						the status of UT's iconic tower. My role on this project was to create a system in Java to parse information from external XML file as well as write to that file.
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Othello</b></div>
+					<div class="answer"><img src="images/othello.png" style="width:200px;float:left"></img>In my rendition of the classic strategy game, I utilized the model-view-controller design pattern to create a playable Othello game with an AI 
+					which is unassumingly tough to defeat. 
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Programming Challenges</b></div>
+					<div class="answer">One of my more small scale programming hobbies is finding and completing programming challenges. From Project Euler to the ACM competition team,
+					I really enjoy wrapping my head around a new logical problem often. When I'm not working on a prototype project,<img src="http://iwanttolearnruby.com/images/project-euler.png" style="float:right;width:200"></img> I like to find small problems which I can tackle in
+					an hour or two. Through this, I've discovered a little bit about optimization, memoization, and algorithms even though I haven't taken any formal classes covering those
+					topics.
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Character Generator</b></div>
+					<div class="answer"> <img src="images/characterGenerator.png" style="width:270px;float:left"></img>After becoming curious about parsing languages, I am working on creating my own file-type to test out the idea and see what all I can accomplish 
+					with this. The project vehicle I'm using to try out the waters is a character generator for Dungeons and Dragons. Combining a few of my interests, I am looking forward
+					to trying out the potential of a parsable file-type.
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>The Fable Of Zelma</b></div>
+					<div class="answer">Through Professor Joseph Zambreno on the Iowa State campus, I am working on a team to create a game for the annual <a href="http://www.rcl.ece.iastate.edu/educational/video-game-scripting">Iowa State IT Olympics</a>. The IT Olympics
+					is a day where high school students from around the state of Iowa gather on the Iowa State campus and compete in various Information Technology-centric events. The game
+					<img src="images/MockRooms.jpg" style="width:220px;float:left"></img>I am working on serves as the centerpiece for the programming portion of the IT Olympics. The mechanics of this game are geared to provide the competing students with a
+					basic programming experience through running scripts which control their character in-game. So, the team and I will be creating the basic game engine and provide 
+					capability for running scripts which the students will then utilize during the IT Olympics competition. 
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>PlanIt</b></div>
+					<div class="answer">An ongoing project to <img src="images/planItScreen.png" style="width:250px;float:right"></img>create a more usable planning interface, I'm working to make a task planner which utilizes the familiar mobile home screen 
+					layout to organize data in a format differing form from the traditionally linear to-do list. I'm working through this while familiarizing myself with the Java Swing 
+					package and its capabilities. It's still in prototype form, but progress is continually being made.
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Projects In C</b></div>
+					<div class="answer"><img src="images/Capture2.png" style="float:right;width:130px"></img> I also have a few smaller projects in C developed throughout a semester in an introductory class.
+					<img src="images/lab9out.png" style="float:bottom;height:105px"></img>
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Writing</b></div>
+					<div class="answer">
+						In addition to programming, I also have a blog and enjoy myself through writing. I like to write on a variety of subjects from "4 Reasons to own a Chromebook," to why I really
+						like cloud watching. Check it out <a href="https://medium.com/@headin_thecloud">here!</a>
+					</div>	
+				</div>
+			</div>
