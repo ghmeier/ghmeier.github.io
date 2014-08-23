@@ -236,7 +236,7 @@ a{
 
 }
 
-@media screen and (max-width: 975px){
+@media handheld, screen and (max-width: 975px){
 		.side-container{
 			left:-115%;
 			width:100%;
