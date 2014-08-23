@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+
+<html>
+	<head>
+	<title>#CloudShirtFriday</title>
+	<link href="css/cloudStylesheet.css" rel="stylesheet" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	</head>
+
+	<body>
+	<div class = "container">
+	
+		<div id = "heading">
+			You Choose
+		</div>
+		<form>
+		<div class="design" id ="choice1" >
+			<div class="thumbnail" style="background:url('img/steamBack.png')" ></div>
+			<input id = "designCheck" type="radio" name="cloud" value="cloud1"></input>
+		</div>
+		<div class="design" id = "choice2">
+			<div class="thumbnail" style="background:url('img/cloudBase.jpg')" ></div>
+			<input id="designCheck" type="radio" name="cloud" value="cloud1"></input>
+		</div>
+		</form>
+	</div>
+	
+	<script>
+		$(document).ready( function(){
+			$(".design").click(function(){
+						$(this).children("#designCheck").prop('checked', !$(this).children("#designCheck").is(':checked'));
+
+			});
+		
+		
+		});
+	</script
+	</body>
+</html>
