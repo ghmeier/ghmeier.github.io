@@ -3,6 +3,7 @@
 	<head>
 		<title><?php echo $name ?> | Garret Meier</title>
 		<link href="./css/stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="./img/favicon.gif" rel="icon" type="img/gif">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

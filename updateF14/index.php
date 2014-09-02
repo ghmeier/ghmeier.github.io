@@ -15,7 +15,7 @@
 			<div class="media-notification">
 				<h1>Hey, I'm so glad you're here...</h1>
 				<p>You can still see all my information on a mobile device, but unfortunately, small screens and mobile browsers don't play nicely with some of the visuals.</p>
-				<p>If you want to experience the full site, come back on a desktop with a screen resolution greater than 950px.</p>
+				<p>If you want to experience the full site, come back on a desktop with a screen width greater than 950px.</p>
 			</div>
 
 			<div class="planet" id = "center"></div>
