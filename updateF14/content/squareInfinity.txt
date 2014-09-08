@@ -1,0 +1,3 @@
+<h1>Square Infinity Website.</h1>
+<h2>Build Period: <span style="font-weight:normal">Summer 2014</span></h2>
+<h2>Languages: <span style="font-weight:normal">html, css, javascript, jquery</span></h2>
