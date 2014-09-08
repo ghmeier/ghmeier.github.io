@@ -8,6 +8,7 @@
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+		<script src="./js/planets.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	</head>
 </html>
@@ -43,5 +44,11 @@
 				<embed src="img/starField.swf" height="100%" width="100%">
 			</object>
 		</video>
+	</div>
+<?php } ?>
+
+<?php function getBottom() { ?>
+	<div class="watermark" style="position:absolute;display:block;width:90%;text-align:middle;left:50%;color:white;opacity:.4;bottom:10px;font-size:10px">
+		&lt;GARRET MEIER.FALL 2014&gt;
 	</div>
 <?php } ?>

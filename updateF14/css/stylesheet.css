@@ -151,6 +151,148 @@ a{
 	margin-top:-25px;
 }
 
+#squareInfinityPlanet{
+	left:40%;
+	top:50%;
+	width:60px;
+	height:60px;
+
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#000066;
+}
+
+#UCCSRadioPlanet{
+	left:39%;
+	top:49%;
+	width:58px;
+	height:58px;
+
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#00005c;
+}
+
+#fableOfZelmaPlanet{
+	left:38%;
+	top:48%;
+	width:56px;
+	height:56px;
+
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#000052;
+}
+
+#travelQuestPlanet{
+	left:37%;
+	top:47%;
+	width:54px;
+	height:54px;
+
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#000047;
+}
+
+#takeTheTowerPlanet{
+	left:36%;
+	top:46%;
+	width:52px;
+	height:52px;
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#00003d;
+}
+
+#wishingWellPlanet{
+	left:35%;
+	top:45%;
+	width:50px;
+	height:50px;
+	
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#000033
+}
+
+#lostHopePlanet{
+	left:34%;
+	top:44%;
+	width:48px;
+	height:48px;
+	
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#000029;
+}
+
+#ninePlanet{
+	left:33%;
+	top:43%;
+	width:46px;
+	height:46px;
+
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#000099;
+}
+
+#verticallySocialPlanet{
+	left:32%;
+	top:42%;
+	width:44px;
+	height:44px;
+
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#00008a;
+}
+
+#happyLittleCloudPlanet{
+	left:32%;
+	top:42%;
+	width:42px;
+	height:42px;
+
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#00007a;
+}
+
+#mtHobyPlanet{
+	left:31%;
+	top:41%;
+	width:40px;
+	height:40px;
+
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#00006b;
+}
+
+#othelloPlanet{
+	left:30%;
+	top:40%;
+	width:38px;
+	height:38px;
+
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#00005c;
+}
+
+#challengesPlanet{
+	left:29%;
+	top:39%;
+	width:36px;
+	height:36px;
+
+	margin-left:-25px;
+	margin-top:-25px;
+	background-color:#00004c;
+}
+
 .orbit {
 	position:absolute;
 	display:block;
@@ -198,6 +340,97 @@ a{
 	margin-left:0px;
 }
 
+#squareInfinityPlanetOrbit{
+	top:40%;
+	left:40%;
+	width:20%;
+	height:20%;
+}
+
+#UCCSRadioPlanetOrbit{
+	top:39%;
+	left:39%;
+	width:22%;
+	height:22%;
+}
+
+#fableOfZelmaPlanetOrbit{
+	top:38%;
+	left:38%;
+	width:24%;
+	height:24%;
+}
+
+#travelQuestPlanetOrbit{
+	top:37%;
+	left:37%;
+	width:26%;
+	height:26%;
+}
+
+#takeTheTowerPlanetOrbit{
+	top:36%;
+	left:36%;
+	width:28%;
+	height:28%;
+}
+
+#wishingWellPlanetOrbit{
+	top:35%;
+	left:35%;
+	width:28%;
+	height:28%;
+}
+
+#lostHopePlanetOrbit{
+	top:34%;
+	left:34%;
+	width:30%;
+	height:30%;
+}
+
+#ninePlanetOrbit{
+	top:33%;
+	left:33%;
+	width:32%;
+	height:32%;
+}
+
+#verticallySocialPlanetOrbit{
+	top:32%;
+	left:32%;
+	width:34%;
+	height:34%;
+}
+
+#happyLittleCloudPlanetOrbit{
+	top:31%;
+	left:31%;
+	width:36%;
+	height:36%;
+}
+
+#mtHobyPlanetOrbit{
+	top:30%;
+	left:30%;
+	width:38%;
+	height:38%;
+}
+
+#othelloPlanetOrbit{
+	top:29%;
+	left:29%;
+	width:40%;
+	height:40%;
+}
+
+#challengesPlanetOrbit{
+	top:28%;
+	left:28%;
+	width:42%;
+	height:42%;
+}
+
 .tooltip{
 	display:block;
 	color:black;
@@ -233,12 +466,13 @@ a{
 	width:300px;
 	height:100%;
 	top:0px;
-	opacity:.7;
+	opacity:.4;
 	background-color:transparent;
 	overflow-y:scroll;
 }
 
 .project{
+	cursor:pointer;
 	height:40px;
 	border-bottom:5px solid black;
 	border-top:5px solid black;	
@@ -256,6 +490,16 @@ a{
 
 .project i{
 	margin-right:5px;
+}
+
+.central-content{
+	position:absolute;
+	left:340px;
+	right:340px;
+	height:100%;
+	opacity:.4;
+	background-color:white;
+	color:black;
 }
 
 #video{
