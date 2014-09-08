@@ -88,7 +88,22 @@
 		</div>
 		
 		<div class="central-content">
-			Here is central content.
+			<script>
+			if (document.location.hash !=""){				
+				var loc = "./content/"+document.location.hash.substring(1)+"txt";
+				$.get(loc).done(function(){
+				$(".central-content").load(loc);
+				}).fail( function(){
+				$(".central-content").load("./content/central.txt");
+				document.location.hash = "central.";
+				});
+			} else {
+				$(".central-content").load("./content/central.txt");
+				document.location.hash = "central.";
+			}
+			
+			
+			</script>
 		</div>
 		
         <script>
@@ -113,10 +128,13 @@
 			
 			$(".project").click( function(){
 				var curId = "#"+$(this).attr("id")+"Planet";
-				$(curId).show();
-				//$(curId).siblings(".planet").hide();
-				//$("#center").show();
-			
+				if (!$(curId).is(":visible")){
+					$(curId).show();
+					$(".central-content").load("./content/"+$(this).attr("id")+".txt");
+					document.location.hash = $(this).attr("id")+".";
+				}else {
+					$(curId).hide();
+				}
 			});
         });
 

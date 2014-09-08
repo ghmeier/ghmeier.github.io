@@ -10,6 +10,10 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 		<script src="./js/planets.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta property="og:site_name" content="Garret Meier">
+		<meta property="og:url" content="www.garretmeier.com">
+		<meta property="og:title" content="Garret Meier">
+		<meta name="description" content="A Sophomore in software engineering at Iowa State University, this is the one stop show for quick information about me.">
 	</head>
 </html>
 <?php } ?>
