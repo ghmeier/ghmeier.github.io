@@ -116,7 +116,7 @@
 			
 			$(".project").hover(function(){
 				$(this).stop();	
-				$(this).animate({"margin-left":"0px"},200,"easeInCirc");
+				$(this).animate({"margin-left":"40px"},200,"easeInCirc");
 				$(this).siblings().stop();			
 				$(this).siblings().css("margin-left","50px");
 			},function(){

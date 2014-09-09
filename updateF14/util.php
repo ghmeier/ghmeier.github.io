@@ -38,7 +38,7 @@
 
 <?php function addStars() { ?>
 	<div class="filter">
-		<video id="video" height="100%" autoplay loop>
+		<video id="video" height="100%" width="auto" autoplay loop>
 
 			<source src="img/starField.mp4" type="video/mp4" >
 			<source src="img/starField.webm" type="video/webm">

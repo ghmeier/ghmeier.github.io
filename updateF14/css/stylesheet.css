@@ -495,12 +495,13 @@ a{
 .central-content{
 	position:absolute;
 	left:340px;
-	right:340px;
+	right:265px;
 	height:100%;
 	opacity:.4;
 	background-color:white;
 	color:black;
 	padding:10px;
+	overflow-y:scroll;
 }
 
 #video{
@@ -509,10 +510,9 @@ a{
 
 .media-notification{
 	display:none;
-
 }
 
-@media handheld, screen and (max-width: 675px){
+@media handheld, screen and (max-width: 795px){
 		.side-container{
 			left:-115%;
 			width:100%;
@@ -559,6 +559,33 @@ a{
 				top:300px;
 				background:white;
 				padding:5px;
+		}
+		
+		.central-content{
+			top:300px;
+			left:0px;
+			right:250px;
+			overflow-y:scroll;
+		}
+		
+		.left-container{
+			top:300px;
+			bottom:0px;
+			overflow-y:scroll;
+			height:auto;
+			right:-16px;
+		}
+		
+		.project{
+			height:100px;
+			
+			
+		}
+		
+		.project h1{
+			font-size:30px;
+			vertical-align:middle;
+			line-height:50px;
 		}
 
 }
