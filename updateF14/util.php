@@ -53,7 +53,7 @@
 <?php } ?>
 
 <?php function getBottom() { ?>
-	<div class="watermark" style="position:absolute;display:block;width:90%;text-align:middle;left:50%;color:white;opacity:.4;bottom:10px;font-size:10px">
-		&lt;GARRET MEIER.FALL 2014&gt;
+	<div class="watermark" style="position:absolute;display:block;width:100%;text-align:center;color:white;opacity:.4;bottom:10px;font-size:10px">
+		Email: meier.garret@gmail.com <br>Phone: 406-839-0906
 	</div>
 <?php } ?>

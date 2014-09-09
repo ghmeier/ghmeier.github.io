@@ -1,3 +1,23 @@
+			<div style="width:48%;margin-right:10px;position:absolute;">
+				<h1>By the Numbers <br>(and some words)</h1>
+				<a href="./content/GarretMeierResume.pdf" target="_blank" style="text-decoration:underline;"><p>Take a look at my resume.</p></a>
+				<h4 style="margin-bottom:0px;margin-top:5px;">Attending: <span style="font-weight:normal">Iowa State University</span></h4>
+				<h4 style="margin-bottom:0px;margin-top:5px;">Major: <span style="font-weight:normal">Software Engineering</span></h4>
+				<h4 style="margin-bottom:0px;margin-top:5px;">Minor: <span style="font-weight:normal">Philosophy</span></h4>
+				<h4 style="margin-bottom:0px;margin-top:5px;">GPA: <span style="font-weight:normal">3.87</span></h4>
+				<h4 style="margin-bottom:0px;margin-top:5px;">Class: <span style="font-weight:normal">Sophomore</span></h4>
+				<h4 style="margin-bottom:0px;margin-top:5px;">Estimated Graduation: <span style="font-weight:normal">Fall 2017</span></h4>
+				
+				<h4>Currently:</h4>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;I am currently in the middle of an internship with <a href="http://bunchball.com">Bunchball, Inc.</a>. 
+					I'm spending my days at their Iowa office in downtown Des Moines, Iowa working on server and client examples using the 
+					Bunchball API. This means a lot of new experience with Java 8, dropwizard server tools, and a new language for me: Ruby.
+					I'm working full time during the fall, and heading back to school at Iowa State in spring 2015. As for the upcoming summer of 2015,
+					I'm in search of an adventure where I can continue learning, building, and exploring my passions.
+				
+				</p>
+			</div>
+			
 			<h1 style="margin-left:50%;">Language & API Experience</h1>
 			<h3 style="margin-bottom:5px;">Java</h3>
 			<div class="progressbar" id="java" style="height:20px;">

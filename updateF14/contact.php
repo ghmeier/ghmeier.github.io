@@ -55,7 +55,7 @@
 			<a href="http://github.com/ghmeier/" target="_blank"><h1><i class="fa fa-github-square"></i>Mountains of Code.</h1></a>
 		</div>
 		<div class="project" style="bottom:10px;">
-			<a href="" target="_blank"><h1 style="font-size:15px"><i class="fa fa-envelope"></i>meier.garret@gmail.com</h1></a>
+			<h1 style="font-size:15px"><i class="fa fa-envelope"></i>meier.garret@gmail.com</h1>
 		</div>
 	</div>
         <script>
