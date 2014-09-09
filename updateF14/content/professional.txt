@@ -1,0 +1,49 @@
+			<h1 style="margin-left:50%;">Language & API Experience</h1>
+			<h3 style="margin-bottom:5px;">Java</h3>
+			<div class="progressbar" id="java" style="height:20px;">
+			</div>
+			<h3 style="margin-bottom:5px;">C#</h3>
+			<div class="progressbar" id="csharp" style="height:20px;">
+			</div>
+			<h3 style="margin-bottom:5px;">C++</h3>
+			<div class="progressbar" id="cplus" style="height:20px;">
+			</div>
+			<h3 style="margin-bottom:5px;">HTML & CSS</h3>
+			<div class="progressbar" id="html" style="height:20px;">
+			</div>
+			<h3 style="margin-bottom:5px;">C</h3>
+			<div class="progressbar" id="c" style="height:20px;">
+			</div>
+			<h3 style="margin-bottom:5px;">JQuery & Javascript</h3>
+			<div class="progressbar" id="jquery" style="height:20px;">
+			</div>
+			<h3 style="margin-bottom:5px;">Ruby</h3>
+			<div class="progressbar" id="ruby" style="height:20px;">
+			</div>			
+			<h3 style="margin-bottom:5px;">LINUX</h3>
+			<div class="progressbar" id="linux" style="height:20px;">
+			</div>
+			<h3 style="margin-bottom:5px;">Google Places API</h3>
+			<div class="progressbar" id="places" style="height:20px;">
+			</div>
+			<h3 style="margin-bottom:5px;">Venmo API</h3>
+			<div class="progressbar" id="venmo" style="height:20px;">
+			</div>
+			<h3 style="margin-bottom:5px;">Python</h3>
+			<div class="progressbar" id="python" style="height:20px;">
+			</div>
+			
+			<script>
+			$(".progressbar").progressbar({value:1});
+			$("#java .ui-progressbar-value").animate({width:"80%"},2000);
+			$("#csharp .ui-progressbar-value").animate({width:"65%"},2000);
+			$("#cplus .ui-progressbar-value").animate({width:"65%"},2000);
+			$("#html .ui-progressbar-value").animate({width:"90%"},2000);
+			$("#c .ui-progressbar-value").animate({width:"63%"},2000);
+			$("#jquery .ui-progressbar-value").animate({width:"60%"},2000);
+			$("#ruby .ui-progressbar-value").animate({width:"40%"},2000);
+			$("#linux .ui-progressbar-value").animate({width:"35%"},2000);
+			$("#places .ui-progressbar-value").animate({width:"95%"},2000);
+			$("#venmo .ui-progressbar-value").animate({width:"70%"},2000);
+			$("#python .ui-progressbar-value").animate({width:"33%"},2000);
+			</script>
