@@ -21,6 +21,8 @@
 			<h1 style="margin-left:50%;">Language & API Experience</h1>
 			<h3 style="margin-bottom:5px;">Java</h3>
 			<div class="progressbar" id="java" style="height:20px;">
+			<div class="progress-label">100% Confident</div>
+			<div class="progress-label" style="left:50.5%;">0% Confident</div>
 			</div>
 			<h3 style="margin-bottom:5px;">C#</h3>
 			<div class="progressbar" id="csharp" style="height:20px;">
