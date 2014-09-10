@@ -61,9 +61,7 @@
         <script>
         $(document).ready( function()
         {
-            $(".side-container").delay(1500).animate({"left":"-100px"},1000,"easeInOutBack");
-            $("#video").animate({"opacity":"1.0"},3000);
-			
+
 			$(".project").hover(function(){
 				$(this).stop();	
 				$(this).animate({"margin-left":"40px"},200,"easeInCirc");

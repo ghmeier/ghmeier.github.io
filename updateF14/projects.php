@@ -45,7 +45,28 @@
 			<?php getBottom(); ?>
 		</div>
 		
-		<div class ="left-container">
+		<div class="centralcontent">
+					<div class="centralcenter">
+			<script>
+			if (document.location.hash !=""){				
+				var loc = "./content/"+document.location.hash.substring(1)+"html";
+				$.get(loc).done(function(){
+				$(".centralcenter").load(loc);
+				}).fail( function(){
+				$(".centralcenter").load("./content/central.html");
+				document.location.hash = "central.";
+				});
+			} else {
+				$(".centralcenter").load("./content/central.html");
+				document.location.hash = "central.";
+			}
+			
+			
+			</script>
+			</div>
+		</div>
+		
+				<div class ="left-container">
 			<div class="project" id="squareInfinity">
 				<h1><i class="fa fa-desktop"></i>Square Infinity</h1>
 			</div>
@@ -87,33 +108,12 @@
 			</div>
 		</div>
 		
-		<div class="central-content">
-			<script>
-			if (document.location.hash !=""){				
-				var loc = "./content/"+document.location.hash.substring(1)+"txt";
-				$.get(loc).done(function(){
-				$(".central-content").load(loc);
-				}).fail( function(){
-				$(".central-content").load("./content/central.txt");
-				document.location.hash = "central.";
-				});
-			} else {
-				$(".central-content").load("./content/central.txt");
-				document.location.hash = "central.";
-			}
-			
-			
-			</script>
-		</div>
-		
         <script>
         $(document).ready( function()
         {
 			$(".planet").hide();
 			$("#center").show();
-            $(".side-container").delay(1500).animate({"left":"-100px"},1000,"easeInOutBack");
-            $("#video").animate({"opacity":"1.0"},3000);
-			
+
 			$(".project").hover(function(){
 				$(this).stop();	
 				$(this).animate({"margin-left":"40px"},200,"easeInCirc");
@@ -130,7 +130,7 @@
 				var curId = "#"+$(this).attr("id")+"Planet";
 				if (!$(curId).is(":visible")){
 					$(curId).show();
-					$(".central-content").load("./content/"+$(this).attr("id")+".txt");
+					$(".centralcenter").load("./content/"+$(this).attr("id")+".html");
 					document.location.hash = $(this).attr("id")+".";
 				}else {
 					$(curId).hide();
