@@ -523,6 +523,7 @@ a{
 	padding-right:20px;
 	overflow-y:visible;
 	max-width:700px;
+	min-height:100%;
 }
 
 #video{
@@ -604,7 +605,7 @@ a{
 		.centralcontent{
 			top:300px;
 			left:0px;
-			right:250px;
+			right:270px;
 			overflow-y:scroll;
 			bottom:0px;
 			height:auto;

@@ -128,13 +128,13 @@
 			
 			$(".project").click( function(){
 				var curId = "#"+$(this).attr("id")+"Planet";
-				if (!$(curId).is(":visible")){
+				//if (!$(curId).is(":visible")){
 					$(curId).show();
 					$(".centralcenter").load("./content/"+$(this).attr("id")+".html");
 					document.location.hash = $(this).attr("id")+".";
-				}else {
-					$(curId).hide();
-				}
+				//}else {
+				//	$(curId).hide();
+				//}
 			});
         });
 

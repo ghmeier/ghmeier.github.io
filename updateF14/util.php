@@ -15,7 +15,7 @@
 		<meta property="og:url" content="www.garretmeier.com">
 		<meta property="og:title" content="Garret Meier">
 		<meta name="description" content="A Sophomore in software engineering at Iowa State University, this is the one stop show for quick information about me.">
-		<meta name="viewport" content="width=630, initial-scale=1, user-scalable=no">
+		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=no">
 	</head>
 </html>
 <?php } ?>
