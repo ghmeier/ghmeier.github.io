@@ -1,0 +1,244 @@
+<!-- Updated Resume Website -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+	
+	<title>Garret Meier</title>
+	<link href="resumeStyleSheet.css" rel="stylesheet" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	
+	<script>	
+	var numberOfTabs = 3;
+	var tabMinPercent = 100/numberOfTabs-2/numberOfTabs + "%"
+	var tabLarge = ((10-numberOfTabs+1) * 10-2) + "%";
+	var tabSmall = "10%";
+
+	$(document).ready(function() {
+		$("#aboutStuff").hide();
+		$("#projectStuff").hide();
+		$("#contactStuff").hide();
+		$("#aboutStuff").animate({left:"0%",width:"0%",opacity:"0.0"});
+		$("#projectStuff").animate({left:"25%",width:"0%",opacity:"0.0"});
+		$("#contactStuff").animate({left:"100%",width:"0%",opacity:"0.0"});
+		$(".navbutton").hover(function() {
+			$(this).siblings().stop();
+			$(this).stop();
+			$(this).siblings().animate({width:tabSmall,letterSpacing:"-7px"});
+			$(this).animate({width:tabLarge,letterSpacing:"7px"});		
+		},function() {
+			$(this).siblings().stop();
+			$(this).stop();
+			$(this).animate({width:tabMinPercent,letterSpacing:"0px"});
+			$(this).siblings().animate({width:tabMinPercent,letterSpacing:"0px"});
+		});	
+		$(".navbutton").click(function() {	
+			$('html,body').stop();	
+			var disId = $(this).attr("id");
+			
+			$("#"+disId+"Stuff").siblings(".content").animate({width:"0%",opacity:"0.0"},"fast");
+			$("#"+disId+"Stuff").siblings(".content").hide();
+			$(".answer").hide();
+			$(".answer").animate({opacity:"0.0"},"slow");
+			$("#"+disId+"Stuff").show();
+			$("#"+disId+"Stuff").animate({width:"100%",opacity:"1"});
+			$('html, body').animate({scrollTop: $(".navbar").offset().top-10},1000);
+		});
+		$(".question").hover(
+		function() {
+			$(this).stop();
+			$(this).animate({left:"0px"});		
+		},function() {
+			$(this).stop();
+			$(this).animate({left:"-10px"});
+		});
+		$(".question").toggle(function() {
+			$(this).siblings().stop();
+			$(this).siblings().show();
+			$(this).siblings().animate({opacity:"1.0"},"slow");
+		},function() {			
+			$(this).siblings().stop();
+			$(this).siblings().animate({opacity:"0.0"},"slow");
+			$(this).siblings().hide();
+		});
+		$(".headingImage").toggle(function() {
+			$(this).attr('src','images/mountainLogoInTheCloud.PNG');
+			//$(this).siblings().show();
+			//$(this).siblings().animate({opacity:"1.0"},"slow");
+		},function() {			
+			$(this).attr('src','images/mountainLogo.PNG');
+			//$(this).siblings().animate({opacity:"0.0"},"slow");
+			//$(this).siblings().hide();
+		});
+	});
+	</script>
+</head>
+
+<body>
+
+<div class="container">
+	<div class="header"> 
+		<img class="headingImage" src="images/mountainLogo.png" height =400px; style = "display:block; margin-left:auto; margin-right:auto;"></img>
+		<div class="navbar" >
+			<div class="navbutton" id="about" style="background-color:#0033CC; left:0%">ABOUT</div>
+			<div class="navbutton" id="project" style="background-color:#70B8FF">PROJECTS</div>
+			<!--<div class="navbutton" id="favorite" style="background-color:#00B8E6">FAVORITES</div>-->
+			<div class="navbutton" id="contact" style="background-color:#003366">CONTACT</div>
+		</div>
+		
+		<div class="content" id="aboutStuff" style="margin-bottom:100px">
+			<div class="staticBar" style="background-color:#0033CC; left:0%; width:98%"><h1>A Bit About Me</h1></div>				
+				<div class="content" id="sizedPost">
+					<div class="question" ><b>What's Your Name?</b></div>
+					<div class="answer" ><img src="images/officiallyLighthearted.png" style="float:left"></img> Hi, I'm Garret Meier, a freshman in Software Engineering at Iowa State University who is minoring in Philosophy. 
+						Check out my <a href="/files/GarretMeierResume.pdf">resume</a> to learn a little more basic information about me.</div>
+				</div>				
+				<div class="content" id="sizedPost">
+					<div class="question" ><b>Why choose Software Engineering?</b></div>
+					<div class="answer" ><img src="images/homePic1.jpg" style="float:right;width:200px"></img> I first fell in love with computers after playing my first game of Age of Empires II, and my interest only deepened
+						after I truly learned what programming and software development entailed. Since I enjoy both software development
+						and the actual coding behind it, I chose Software Engineering as my major to learn the techniques behind both. 
+						The S E program additionally offers the opportunity to see a holistic picture of technology including both software and hardware.</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question" ><b>What is your programming experience?</b></div>
+					<div class="answer" >My first programming experience was in High School with a language called Blitz Basic for three years. Towards
+						<img src="images/homePic3.jpg" style="float:left;width:320px"></img>the end of my junior year in High School, I began learning Java. I then completed two semesters of college 
+						classes specifically in Java. One taught the basics and the second taught differing design patterns in Java
+						programs. I am currently taking a Design Patterns class in Java and have over a year and a half experience in
+						the language. I also took a class in C programming in Fall 2013. Additionally, I have approximately six months
+						experience in HTML, Python, and CSS which I have been teaching myself in my free time.</div>
+				</div>					
+				<div class="content" id="sizedPost">
+					<div class="question" ><b>What do you want to do in technology?</b></div>
+					<div class="answer" ><b></b>The most general answer I have about my goals in technology is that I am looking to innovate in any way I can. The
+						ability to completely change the perception of a technology drew me into the field in the first place and I am<img src="images/homePic2.jpg" style="float:right;width:320px"></img> 
+						looking to push the edges of whichever area of programming I enter into. More specifically, I see myself in
+						the role of someone who interfaces with both the clients and programmers to achieve the best final product. The 
+						times I enjoy myself the most are the early developmental stages where the group throws ideas onto a whiteboard
+						and everyone collaborates to make the best final product. Following the evolution of a project from it's inception
+						to actually hashing out a UML diagram of the specifications stands out as one of my favorite feelings. I enjoy it 
+						so much that sometimes I just come up with an idea and try to flesh it out just for the fun of it.</div>
+				</div>	
+				<div class="content" id="sizedPost">
+					<div class="question"><b>How do you stay busy outside of school?</b></div>
+					<div class="answer" ><img src="images/homePic4.jpg" style="float:right;width:320px"></img>With so many opportunities to express myself outside of school whether through clubs or anything else, it proves
+						continually difficult to choose how I invest my time. I like to stay busy with a variety of clubs and activities
+						though. Related to my major I spend a lot of time practicing my problem solving skills with the ACM Programming
+						competition team, the Computer Science and Software Engineering Club, hackathons, and Freshman Leaders in 
+						Engineering. Outside of that I am a part of the Quidditch club on campus, I play intramural sports whenever the
+						opportunity arises, and actively participate in the Iowa State Honors Program. Away from organized activities, I
+						am a huge fan of bouldering, running, playing board games, attending concerts, and discussing politics. If you're
+						interested in seeing a few of my favorite things, check out my favorites page!</div>
+				</div>		
+				<div class="content" id="sizedPost">
+					<div class="question" ><b>Why are you minoring in Philosophy?</b></div>
+					<div class="answer" >I chose to minor in Philosophy for two reasons. The first is that I am interested in learning about the canonical
+						philosophical teachings, and the second is that I want to keep myself rounded in my interests. I enjoy the<img src="images/theLongWalk.jpg" style="float:right;width:320px"></img>
+						reflective and introspective nature of philosophy, which questions the reasoning behind individual beliefs and 
+						actions. Staying well-rounded as a person is a primary goal of mine which I believe taking philosophy classes
+						will help achieve. I enjoy reading, writing, and communication and don't want to lose that while studying Software
+						Engineering. I think it will help me to avoid becoming burned out as many programmers are.</div>
+				</div>	
+				<div class="content" id="sizedPost">
+					<div class="question"><b>What's a memorable fact about yourself?</b></div>
+					<div class="answer"><img src="images/Frolic.jpg" style="float:right;width:320px"></img>If there's one thing that you should remember about me, it's that I am a cloud enthusiast!</div>
+				</div>	
+		</div>		
+		<div class="content" id="projectStuff" style="margin-bottom:100px">
+			<div class="staticBar" style="background-color:#70B8FF; left:0%; width:98%; margin-bottom:10px;"><h1>Creations</h1><p>Check out this <a href="files/Garret_Meier_Projects.ZIP">.zip file</a> with a bunch of my projects. My group projects contain a file.</p> </div>
+			<div class="content" id="main-body">
+				<div class="content" id="sizedPost">
+					<div class="question" ><b>Lost Hope</b></div>
+					<div class="answer" ><b></b>Lost Hope is a project dreamt up by the members of Square Infinity, a company of which I am a founding partner.<img src="images/lostHopeTitle.jpg" style="width:200px;float:right"></img> 
+						The game, taking elements from <a href="https://www.minecraft.net">Minecraft</a> and <a href="https://www.terraria.org">Terarria</a>, seeks to take the limitless, sandbox experience and add elements of story while pumping in an even greater 
+						array of creativity than other games of the genre. As part of this project, I worked solely on one of the larger classes which controlled the random 
+						<img src="images/LostHopeScreen3.png" style="float:left;width:200px;"></img>generation of the world. I created a class system which created a four-sided, square world randomly populated with dirt, stone, caves, ore, and more.
+						Along with this, I created a class hierarchy for the various animals populating the world of Lost Hope. This meant working with some basic AI and a modification
+						of the decorator design pattern.</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Take The Tower</b></div>
+					<div class="answer"><img src="images/UT Tower Prototype.jpg" style="float:right;width:200px;"></img><a href="https://www.facebook.com/takethetower">Take the Tower</a> is Square Infinity's current project, contracted with the University of Texas. This app, coming soon to Android and iOS, displays
+						the status of UT's iconic tower. My role on this project was to create a system in Java to parse information from external XML file as well as write to that file.
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Othello</b></div>
+					<div class="answer"><img src="images/othello.png" style="width:200px;float:left"></img>In my rendition of the classic strategy game, I utilized the model-view-controller design pattern to create a playable Othello game with an AI 
+					which is unassumingly tough to defeat. 
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Programming Challenges</b></div>
+					<div class="answer">One of my more small scale programming hobbies is finding and completing programming challenges. From Project Euler to the ACM competition team,
+					I really enjoy wrapping my head around a new logical problem often. When I'm not working on a prototype project,<img src="images/project-euler.png" style="float:right;width:200"></img> I like to find small problems which I can tackle in
+					an hour or two. Through this, I've discovered a little bit about optimization, memoization, and algorithms even though I haven't taken any formal classes covering those
+					topics.
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Character Generator</b></div>
+					<div class="answer"> <img src="images/characterGenerator.PNG" style="width:270px;float:left"></img>After becoming curious about parsing languages, I am working on creating my own file-type to test out the idea and see what all I can accomplish 
+					with this. The project vehicle I'm using to try out the waters is a character generator for Dungeons and Dragons. Combining a few of my interests, I am looking forward
+					to trying out the potential of a parsable file-type.
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>The Fable Of Zelma</b></div>
+					<div class="answer">Through Professor Joseph Zambreno on the Iowa State campus, I am working on a team to create a game for the annual <a href="http://www.rcl.ece.iastate.edu/educational/video-game-scripting">Iowa State IT Olympics</a>. The IT Olympics
+					is a day where high school students from around the state of Iowa gather on the Iowa State campus and compete in various Information Technology-centric events. The game
+					<img src="images/MockRooms.jpg" style="width:220px;float:left"></img>I am working on serves as the centerpiece for the programming portion of the IT Olympics. The mechanics of this game are geared to provide the competing students with a
+					basic programming experience through running scripts which control their character in-game. So, the team and I will be creating the basic game engine and provide 
+					capability for running scripts which the students will then utilize during the IT Olympics competition. 
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>PlanIt</b></div>
+					<div class="answer">An ongoing project to <img src="images/planItScreen.PNG" style="width:250px;float:right"></img>create a more usable planning interface, I'm working to make a task planner which utilizes the familiar mobile home screen 
+					layout to organize data in a format differing form from the traditionally linear to-do list. I'm working through this while familiarizing myself with the Java Swing 
+					package and its capabilities. It's still in prototype form, but progress is continually being made.
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Projects In C</b></div>
+					<div class="answer"><img src="images/Capture2.PNG" style="float:right;width:130px"></img> I also have a few smaller projects in C developed throughout a semester in an introductory class.
+					<br></br><img src="images/lab9out.PNG" style="float:bottom;height:105px"></img>
+					</div>
+				</div>
+				<div class="content" id="sizedPost">
+					<div class="question"><b>Writing</b></div>
+					<div class="answer">
+						In addition to programming, I also have a blog and enjoy myself through writing. I like to write on a variety of subjects from "4 Reasons to own a Chromebook," to why I really
+						like cloud watching. Check it out <a href="https://medium.com/@headin_thecloud">here!</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<!--<div class="content" id="favoriteStuff" style="margin-bottom:100px">
+			<div class="staticBar" style="background-color:#00B8E6;left:0%; width:98%"><h1>A Few of My Favorite Things</h1></div>
+			<h1>hey dis be my fav</h1>
+		</div>-->
+		<div class="content" id="contactStuff" style="margin-bottom:100px">
+			<div class="staticBar" style="background-color:#003366;left0%; width:98%"><h1>Stay In Touch</h1></div>
+			<div class="content" id="main-body">
+				<div class="question"><b>How should I contact you?</b></div>
+				<div class="answer">
+					Please feel free to contact me any time! I'm interested in finding an amazing place to intern this summer, and I'm always hoping to find adventure, explore new places, and learn anything I can.
+					The best way to get in touch with me is through my email, meier.garret@gmail.com.
+					<br></br>If you're interested in contacting me in a little less formal way, check out my social media profiles:
+					<br></br>
+					<a href="https://www.facebook.com/garret.meier"><img src="images/facebookIcon.png" style="width:50px"/></a>
+					<a href="https://www.instagram.com/headin_thecloud"><img src="images/instagramIcon.png" style="width:50px"/></a>
+					<a href="https://www.twitter.com/headin_thecloud"><img src="images/twitterIcon.png" style="width:50px"/></a>
+					
+				</div>
+			</div>
+		</div>
+
+
+</div>
+
+</body>

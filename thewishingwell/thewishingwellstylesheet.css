@@ -1,0 +1,159 @@
+body {
+	background:url(img/backgroundImage.jpeg) no-repeat left top fixed;
+	background-size: 100%  100%;
+	overflow-y:scroll;
+	font-family:'Roboto',sans-serif;
+}
+
+
+img{
+	margin:0px;
+	padding:0xp;
+}
+
+#theWell {
+	position:absolute;
+	left:15%;
+	bottom:10%;
+	cursor:pointer;
+}
+
+#wishForm {
+	top:30px;
+	position:absolute;
+	right:10%;
+	width:500px;
+	height:350px;
+	text-align:center;
+	
+}
+#backgroundWishForm {
+	opacity: .2;
+	position:absolute;
+	right:10%;
+	width:500px;
+	height:350px;
+	text-align:center;
+	background-color:#ffffff;
+	border-radius:2px;
+	box-shadow:2px 2px 10px #000000;
+}
+#userFeed{
+	position:absolute;
+	right:10%;
+	width:500px;
+	background:transparent;
+	height:500px;
+	text-align:center;
+	bottom:2%;
+}
+#backgroundUserFeed{
+	position:absolute;
+	right:10%;
+	width:500px;
+	height:500px;
+	text-align:center;
+	bottom:2%;
+	opacity: .7;
+	background-color:transparent;
+	border-radius:2px;
+	/*box-shadow:5px 5px 10px #000000;*/
+}
+
+.wellButton {
+	margin:5px;
+}
+
+hr{
+	color:#000000;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+#venmo{
+background: #3D95CE;
+font-size: 14px;
+text-transform: uppercase;
+color: #fff;
+font-size: 14px;
+line-height: 14px;
+vertical-align: baseline;
+font-family: sans-serif;
+text-align: center;
+text-shadow: none;
+}
+
+#theWell p{
+	position:absolute;
+	color:white;
+	left:15%;
+	bottom:40%;
+	font-size:10px;
+	opacity:1.0;
+	overflow:show;
+	white-space:nowrap;
+}
+
+button{
+	display:inline;
+	background:#ffffff;
+	padding:8px 16px;
+	border:none;
+	-webkit-border-radius:  3px;
+	-moz-border-radius: 3px;
+	border-radius: 2px;
+	opacity: .9;
+	-webkit-appearance: button;
+	cursor:pointer;
+	
+}
+
+#added{
+	font-size:20px;
+	cursor:auto;
+	background-color:#FFFFFF;
+	cursor:auto;
+}
+
+#took{
+	font-size:20px;
+	cursor:auto;
+	background-color:#000000;
+	color:#ffffff;
+	cursor:auto;
+}
+
+#wished{
+	font-size:20px;
+	cursor:auto;
+	background-color:#00ccff;
+	color:#000000;
+	cursor:auto;
+}
+
+#about-contain {
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+	width:1080;
+	height:950;
+	background:url(img/16.jpg);
+}
+
+#aboutSection {
+	padding:20px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+#aboutSection h2{
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+}
+
+#about-contain hr{
+	margin-top:-10px;
+	margin-bottom:-10px;
+}
+

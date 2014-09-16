@@ -55,8 +55,8 @@
 			<div class="project" id="professional">
 				<h1><i class="fa fa-code"></i>Professional</h1>
 			</div>
-			<div class="project">
-				<a href="./content/GarretMeierResume.pdf" target="_blank"><h1><i class="fa fa-file-text"></i>Resume</h1></a>
+			<div class="project" id="resume">
+				<h1><i class="fa fa-file-text"></i>Resume</h1>
 			</div>
 			<div class="project" id="casual">
 				<h1><i class="fa fa-coffee"></i>Casual</h1>

@@ -1,0 +1,3 @@
+<div class="staticBar" style="background-color:#003366;left0%; width:98%"><h1>Stay In Touch</h1></div>
+			<p>There are a bunch of ways you can contact me!</p>
+			<p>Email Me at meier.garret@gmail.com</p>
