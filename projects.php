@@ -20,9 +20,7 @@
 			<div class="planet" id="wishingWellPlanet"></div>
 			<div class="planet" id="ninePlanet"></div>
 			<div class="planet" id="lostHopePlanet"></div>
-			<div class="planet" id="verticallySocialPlanet"></div>
 			<div class="planet" id="happyLittleCloudPlanet"></div>
-			<div class="planet" id="mtHobyPlanet"></div>
 			<div class="planet" id="othelloPlanet"></div>
 			<div class="planet" id="challengesPlanet"></div>
 			
@@ -35,9 +33,7 @@
 			<div class="orbit" id="wishingWellPlanetOrbit"></div>
 			<div class="orbit" id="ninePlanetOrbit"></div>
 			<div class="orbit" id="lostHopePlanetOrbit"></div>
-			<div class="orbit" id="verticallySocialPlanetOrbit"></div>
 			<div class="orbit" id="happyLittleCloudPlanetOrbit"></div>
-			<div class="orbit" id="mtHobyPlanetOrbit"></div>
 			<div class="orbit" id="othelloPlanetOrbit"></div>
 			<div class="orbit" id="challengesPlanetOrbit"></div>
 			<?php addStars(); ?>
@@ -91,21 +87,10 @@
 			<div class="project" id="nine">
 				<h1><i class="fa fa-desktop"></i>9to5</h1>
 			</div>
-			<div class="project" id="verticallySocial">
-				<h1><i class="fa fa-desktop"></i>Vertically Social</h1>
-			</div>
 			<div class="project" id="happyLittleCloud">
 				<h1><i class="fa fa-gamepad"></i>Happy Little Cloud</h1>
 			</div>
-			<div class="project" id="mtHoby">
-				<h1><i class="fa fa-desktop"></i>HOBY Montana</h1>
-			</div>
-			<div class="project" id="othello">
-				<h1><i class="fa fa-gamepad"></i>Othello</h1>
-			</div>
-			<div class="project" id="challenges">
-				<h1><i class="fa fa-terminal"></i>Challenges</h1>
-			</div>
+
 		</div>
 		
         <script>

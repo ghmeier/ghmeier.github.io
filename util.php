@@ -30,10 +30,10 @@
 		</div>
 		</a>
 		<div class="info">
-			<a href="./about.php"><div class="navbutton" id="home">.about </div></a>
-			<a href="./projects.php"><div class="navbutton" id="home">.projects</div></a>
-			<a href="./blogs.php"><div class="navbutton" id="home">.blogs</div></a>
-			<a href="./contact.php"><div class="navbutton" id="home">.contact</div></a>
+			<a href="./about.php" style="color:black"><div class="navbutton" id="home">.about </div></a>
+			<a href="./projects.php" style="color:black"><div class="navbutton" id="home">.projects</div></a>
+			<a href="./blogs.php" style="color:black"><div class="navbutton" id="home">.blogs</div></a>
+			<a href="./contact.php" style="color:black"><div class="navbutton" id="home">.contact</div></a>
 		</div>
 	</div>
 <?php } ?>
