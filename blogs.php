@@ -9,11 +9,11 @@
         <?php getSidebar(); ?>
 
         <div class = "content-container">
-		
+
         <?php addStars(); ?>
 		<?php getBottom(); ?>
     </div>
-	
+
 	<div class="centralcontent" style="overflow-y:scroll;right:-14px;">
 	<script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" data-width="100%" href="https://medium.com/@headin_thecloud/492b7633b555">Six Months of Startup</a>
 	<script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" data-width="100%" href="https://medium.com/@headin_thecloud/c2625e61757c">Working with Friends</a>
@@ -27,6 +27,7 @@
 	<script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" data-width="100%" href="https://medium.com/@headin_thecloud/e322d24ab0">I Love Clouds, and So Should You</a>
 	<script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" data-width="100%" href="https://medium.com/@headin_thecloud/50d7899391c6">Encouragement for the Male Feminist</a>
 	</div>
- 
+
     </body>
+    <script src="./js/star.js"></script>
 </html>

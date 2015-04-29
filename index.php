@@ -5,14 +5,14 @@
 
 <html>
 
-	<body>
+	<body style="">
 		<?php getSidebar(); ?>
 
 		<div class = "content-container">
 
-		<?php addStars(); ?>
+		<!--<?php addStars(); ?>-->
 
-		
+
 		<?php getBottom(); ?>
 			<div class="media-notification">
 				<h1>Hey, I'm so glad you're here...</h1>
@@ -58,6 +58,6 @@
 		</div>
 	</body>
 
-
+<script src="./js/star.js"></script>
 
 </html>
