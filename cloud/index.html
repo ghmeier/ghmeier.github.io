@@ -3,39 +3,111 @@
 
 <html>
 	<head>
-	<title>#CloudShirtFriday</title>
-	<link href="css/cloudStylesheet.css" rel="stylesheet" type="text/css"/>
+	<title>dot.slash.cloud.</title>
+	<link href="./img/cloudlogofav.gif" rel="icon" type="img/gif">
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="./js/midnight.jquery.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="material/css-compiled/ripples.min.css" rel="stylesheet">
+    <link href="material/css-compiled/material-wfont.min.css" rel="stylesheet">
+	<link href="css/cloudStylesheet.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="js/flipclock.css">
 	</head>
 
 	<body>
-	<div class = "container">
 	
-		<div id = "heading">
-			You Choose
-		</div>
-		<form>
-		<div class="design" id ="choice1" >
-			<div class="thumbnail" style="background:url('img/steamBack.png')" ></div>
-			<input id = "designCheck" type="radio" name="cloud" value="cloud1"></input>
-		</div>
-		<div class="design" id = "choice2">
-			<div class="thumbnail" style="background:url('img/cloudBase.jpg')" ></div>
-			<input id="designCheck" type="radio" name="cloud" value="cloud1"></input>
-		</div>
-		</form>
+	<div class="bs-component">
+		<div class="navbar navbar-dark navbar-raised navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+				<a class="navbar-brand" href="#home"><img src="./img/cloudlogo-light.png" style="height:100%;"/></a>
+				
+			</div>
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                                        <li><a href="#vote">Vote!</a></li>
+                                        <li><a href="#upload">Oooh</a></li>
+										<li><a href="#view">Aaah</a></li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0)" class="dropdown-toggle withripple" data-toggle="dropdown">Dropdown <b class="caret"></b><div class="ripple-wrapper"></div></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:void(0)">Action</a></li>
+                                                <li><a href="javascript:void(0)">Another action</a></li>
+                                                <li><a href="javascript:void(0)">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li class="dropdown-header">Dropdown header</li>
+                                                <li><a href="javascript:void(0)">Separated link</a></li>
+                                                <li><a href="javascript:void(0)">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
+                    <li><a href="http://garretmeier.com">GarretMeier.com</a></li>
+                </ul>
+            </div>
+		</div>	
 	</div>
 	
-	<script>
+	<div class="home header" id="home">
+		<div class="filter"></div>		
+		<div style="position:absolute;text-align:center;width:100%;color:black;top:30%;z-index:2">
+			<div class="well well-sm">
+				<img src="./img/cloudlogo.png" style="display:block;margin-left:auto;margin-right:auto;"/>			
+				<h3 style="">dot.slash.cloud.</h3>
+				<h1 style="">vote. share. view.</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div class="vote header" id="vote">
+		<div class="filter"></div>
+		<div style="position:absolute;text-align:center;width:100%;color:black;top:30%;z-index:2">
+			<div class="well well-sm">
+				<h1 style="">vote.</h1>		
+				<h3 style="">want a cloud shirt? vote for the design you want!</h3>
+				<p>the next cloud shirt order begins:</p>
+				<div class="clock" style="position:absolute;left:50%;margin-left:-17%;"></div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="js/flipclock.js"></script>
+	<script src="js/flipclock.min.js"></script>
+    <script src="material/scripts/ripples.js"></script>
+    <script src="material/scripts/material.js"></script>
+	
+	<script> 
+		var end = new Date("1/1/15 00:00:00");
+	
 		$(document).ready( function(){
-			$(".design").click(function(){
-						$(this).children("#designCheck").prop('checked', !$(this).children("#designCheck").is(':checked'));
-
+			resizeBody();
+			
+			var currentDate = new Date();
+			var futureDate  = new Date("11/28/2014 11:59:59");
+			var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+			clock = $('.clock').FlipClock(diff, {
+				clockFace: 'DailyCounter',
+				countdown: true
 			});
-		
-		
 		});
-	</script
+		
+		$(window).resize( function (){
+			resizeBody();
+		});
+		
+		function resizeBody(){
+			if ($(window).height() > 700){
+				$(".header").css({'height':(($(window).height()))});
+				$(".filter").css({'height':(($(window).height()))});
+			}
+		}
+	</script>
 	</body>
 </html>
