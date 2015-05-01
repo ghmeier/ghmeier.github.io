@@ -9,7 +9,7 @@
         <?php getSidebar(); ?>
 
         <div class = "content-container">
-			
+
 			<div class="planet" id="center"></div>
 			<div class="orbit" id="centerOrbit"></div>
 			<div class="planet" id="squareInfinityPlanet"></div>
@@ -23,7 +23,7 @@
 			<div class="planet" id="happyLittleCloudPlanet"></div>
 			<div class="planet" id="othelloPlanet"></div>
 			<div class="planet" id="challengesPlanet"></div>
-			
+
 			<div class="orbit" id="centerOrbit"></div>
 			<div class="orbit" id="squareInfinityPlanetOrbit"></div>
 			<div class="orbit" id="UCCSRadioPlanetOrbit"></div>
@@ -37,14 +37,14 @@
 			<div class="orbit" id="othelloPlanetOrbit"></div>
 			<div class="orbit" id="challengesPlanetOrbit"></div>
 			<?php addStars(); ?>
-			
+
 			<?php getBottom(); ?>
 		</div>
-		
+
 		<div class="centralcontent">
 					<div class="centralcenter">
 			<script>
-			if (document.location.hash !=""){				
+			if (document.location.hash !=""){
 				var loc = "./content/"+document.location.hash.substring(1)+"html";
 				$.get(loc).done(function(){
 				$(".centralcenter").load(loc);
@@ -56,12 +56,12 @@
 				$(".centralcenter").load("./content/central.html");
 				document.location.hash = "central.";
 			}
-			
-			
+
+
 			</script>
 			</div>
 		</div>
-		
+
 				<div class ="left-container">
 			<div class="project" id="squareInfinity">
 				<h1><i class="fa fa-desktop"></i>Square Infinity</h1>
@@ -92,7 +92,7 @@
 			</div>
 
 		</div>
-		
+
         <script>
         $(document).ready( function()
         {
@@ -100,9 +100,9 @@
 			$("#center").show();
 
 			$(".project").hover(function(){
-				$(this).stop();	
+				$(this).stop();
 				$(this).animate({"margin-left":"40px"},200,"easeInCirc");
-				$(this).siblings().stop();			
+				$(this).siblings().stop();
 				$(this).siblings().css("margin-left","50px");
 			},function(){
 				$(this).siblings().stop();
@@ -110,7 +110,7 @@
 				$(this).animate({"margin-left":"50px"},200,"easeOutCirc");
 				$(this).siblings().css("margin-left","50px");
 			});
-			
+
 			$(".project").click( function(){
 				var curId = "#"+$(this).attr("id")+"Planet";
 				//if (!$(curId).is(":visible")){
@@ -125,4 +125,5 @@
 
         </script>
     </body>
+    <script src="./js/star.js"></script>
 </html>

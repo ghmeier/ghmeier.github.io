@@ -21,6 +21,7 @@
 <?php } ?>
 
 <?php function getSidebar(){ ?>
+    <canvas id="all" style="position:absolute;display:block;background-color:black;z-index:-10"></canvas>
 	<div class="side-container">
 		<a href="./index.php">
 		<div class="profile">
@@ -39,7 +40,7 @@
 <?php } ?>
 
 <?php function addStars() { ?>
-	<div class="filter">
+	<!--<div class="filter">
 		<video id="video" height="100%" width="auto" autoplay loop>
 
 			<source src="img/starField.mp4" type="video/mp4" >
@@ -50,7 +51,7 @@
 				<embed src="img/starField.swf" height="100%" width="100%">
 			</object>
 		</video>
-	</div>
+	</div>-->
 <?php } ?>
 
 <?php function getBottom() { ?>

@@ -12,7 +12,7 @@
 
         <?php addStars(); ?>
 		<?php getBottom(); ?>
-		
+
 		<div class="planet" id = "center"></div>
 			<div class="orbit" id="centerOrbit"></div>
 
@@ -32,9 +32,9 @@
 			</div>
 			<div class="orbit" id="fourthOrbit"></div>
 
-		
+
     </div>
-		
+
 	<div class="left-container" style="overflow-x:hidden">
 		<div class="project">
 			<a href="http://facebook.com/garret.meier" target="_blank"><h1><i class="fa fa-facebook-square"></i>Wanna be friends?</h1></a>
@@ -63,9 +63,9 @@
         {
 
 			$(".project").hover(function(){
-				$(this).stop();	
+				$(this).stop();
 				$(this).animate({"margin-left":"40px"},200,"easeInCirc");
-				$(this).siblings().stop();			
+				$(this).siblings().stop();
 				$(this).siblings().css("margin-left","50px");
 			},function(){
 				$(this).siblings().stop();
@@ -77,4 +77,5 @@
 
         </script>
     </body>
+    <script src="./js/star.js"></script>
 </html>
