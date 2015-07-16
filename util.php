@@ -33,25 +33,10 @@
 		<div class="info">
 			<a href="./about.php" style="color:black"><div class="navbutton" id="home">.about </div></a>
 			<a href="./projects.php" style="color:black"><div class="navbutton" id="home">.projects</div></a>
-			<a href="./blogs.php" style="color:black"><div class="navbutton" id="home">.blogs</div></a>
+			<a href="./blogs.php" style="color:black"><div class="navbutton" id="home">.blog</div></a>
 			<a href="./contact.php" style="color:black"><div class="navbutton" id="home">.contact</div></a>
 		</div>
 	</div>
-<?php } ?>
-
-<?php function addStars() { ?>
-	<!--<div class="filter">
-		<video id="video" height="100%" width="auto" autoplay loop>
-
-			<source src="img/starField.mp4" type="video/mp4" >
-			<source src="img/starField.webm" type="video/webm">
-			<source src="img/starField.ogv" type="video/ogg">
-
-			<object data="img/starField.mp4" >
-				<embed src="img/starField.swf" height="100%" width="100%">
-			</object>
-		</video>
-	</div>-->
 <?php } ?>
 
 <?php function getBottom() { ?>

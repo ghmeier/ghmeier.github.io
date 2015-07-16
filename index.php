@@ -10,9 +10,6 @@
 
 		<div class = "content-container">
 
-		<!--<?php addStars(); ?>-->
-
-
 		<?php getBottom(); ?>
 			<div class="media-notification">
 				<h1>Hey, I'm so glad you're here...</h1>

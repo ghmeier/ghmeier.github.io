@@ -9,8 +9,6 @@
         <?php getSidebar(); ?>
 
         <div class = "content-container">
-
-        <?php addStars(); ?>
 		<?php getBottom(); ?>
     </div>
 

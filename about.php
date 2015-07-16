@@ -8,8 +8,6 @@
         <?php getSidebar(); ?>
 
         <div class = "content-container">
-
-        <?php addStars(); ?>
 		<?php getBottom(); ?>
 				<div class="planet" id = "center"></div>
 			<div class="orbit" id="centerOrbit"></div>
