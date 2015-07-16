@@ -25,9 +25,10 @@
 	<div class="side-container">
 		<a href="./index.php">
 		<div class="profile">
-			<h1 style="font-size:55px;top:270px;">Garret </h1>
-			<h1 style="font-size:40px;top:330px;">Meier </h1>
 			<img src="./img/primaryPhoto.jpg" />
+			<h1 style="font-size:55px;">Garret </h1>
+			<h1 style="font-size:40px;margin-bottom:20px">Meier </h1>
+
 		</div>
 		</a>
 		<div class="info">
@@ -37,21 +38,6 @@
 			<a href="./contact.php" style="color:black"><div class="navbutton" id="home">.contact</div></a>
 		</div>
 	</div>
-<?php } ?>
-
-<?php function addStars() { ?>
-	<!--<div class="filter">
-		<video id="video" height="100%" width="auto" autoplay loop>
-
-			<source src="img/starField.mp4" type="video/mp4" >
-			<source src="img/starField.webm" type="video/webm">
-			<source src="img/starField.ogv" type="video/ogg">
-
-			<object data="img/starField.mp4" >
-				<embed src="img/starField.swf" height="100%" width="100%">
-			</object>
-		</video>
-	</div>-->
 <?php } ?>
 
 <?php function getBottom() { ?>

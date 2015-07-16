@@ -10,9 +10,6 @@
 
 		<div class = "content-container">
 
-		<!--<?php addStars(); ?>-->
-
-
 		<?php getBottom(); ?>
 			<div class="media-notification">
 				<h1>Hey, I'm so glad you're here...</h1>
@@ -24,34 +21,34 @@
 			<div class="orbit" id="centerOrbit"></div>
 
 			<div class="planet" id="first">
-					<div class="tooltip" id="about">
+<!-- 					<div class="tooltip" id="about">
 					<div class="tooldesc" onclick="newPage('about')" style =""><strong>get to know me</strong></div>
 					<i class="fa fa-arrow-circle-right fa-3x" style=""></i>
-				</div>
+				</div>-->
 			</div>
 			<div class="orbit" id="firstOrbit"></div>
 
 			<div class="planet" id="second">
-				<div class="tooltip" id="projects">
+<!-- 				<div class="tooltip" id="projects">
 					<div class="tooldesc" onclick="newPage('projects')" style =""><strong>see what I've done</strong></div>
 					<i class="fa fa-arrow-circle-right fa-3x" style=""></i>
-				</div>
+				</div> -->
 			</div>
 			<div class="orbit" id="secondOrbit"></div>
 
 			<div class="planet" id="third">
-				<div class="tooltip" id="blogs">
+<!-- 				<div class="tooltip" id="blogs">
 					<div class="tooldesc" onclick="newPage('blogs')" style =""><strong>read on</strong></div>
 					<i class="fa fa-arrow-circle-right fa-3x" style=""></i>
-				</div>
+				</div> -->
 			</div>
 			<div class="orbit" id="thirdOrbit"></div>
 
 			<div class="planet" id="fourth">
-				<div class="tooltip" id="contact">
+<!-- 				<div class="tooltip" id="contact">
 					<div class="tooldesc" onclick="newPage('contact')" style =""><strong>connect with me</strong></div>
 					<i class="fa fa-arrow-circle-right fa-3x" style=""></i>
-				</div>
+				</div> -->
 			</div>
 			<div class="orbit" id="fourthOrbit"></div>
 

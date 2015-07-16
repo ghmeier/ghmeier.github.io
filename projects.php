@@ -36,8 +36,6 @@
 			<div class="orbit" id="happyLittleCloudPlanetOrbit"></div>
 			<div class="orbit" id="othelloPlanetOrbit"></div>
 			<div class="orbit" id="challengesPlanetOrbit"></div>
-			<?php addStars(); ?>
-
 			<?php getBottom(); ?>
 		</div>
 
