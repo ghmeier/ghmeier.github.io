@@ -25,9 +25,10 @@
 	<div class="side-container">
 		<a href="./index.php">
 		<div class="profile">
-			<h1 style="font-size:55px;top:270px;">Garret </h1>
-			<h1 style="font-size:40px;top:330px;">Meier </h1>
 			<img src="./img/primaryPhoto.jpg" />
+			<h1 style="font-size:55px;">Garret </h1>
+			<h1 style="font-size:40px;margin-bottom:20px">Meier </h1>
+
 		</div>
 		</a>
 		<div class="info">
