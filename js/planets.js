@@ -1,4 +1,4 @@
-		
+
 		var planets = new Array();
 		planets["center"] = 0;
 		planets["first"] = 2;
@@ -23,11 +23,11 @@
 		$(document).ready( function()
 		{
 			if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-				$(".side-container").delay(1500).animate({"left":"-100px"},1000,"easeInOutBack");
+				$(".side-container").delay(100).animate({"left":"-100px"},1000,"easeInOutBack");
 			}else {
-			
+
 			}
-			$("#video").animate({"opacity":"1.0"},3000);
+
 			$(".tooltip").each(function()
 			{
 				$(this).hide();

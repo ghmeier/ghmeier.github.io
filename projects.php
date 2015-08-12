@@ -36,28 +36,25 @@
 			<div class="orbit" id="happyLittleCloudPlanetOrbit"></div>
 			<div class="orbit" id="othelloPlanetOrbit"></div>
 			<div class="orbit" id="challengesPlanetOrbit"></div>
-			<?php getBottom(); ?>
 		</div>
 
-		<div class="centralcontent">
-					<div class="centralcenter">
-			<script>
-			if (document.location.hash !=""){
-				var loc = "./content/"+document.location.hash.substring(1)+"html";
-				$.get(loc).done(function(){
-				$(".centralcenter").load(loc);
-				}).fail( function(){
-				$(".centralcenter").load("./content/central.html");
-				document.location.hash = "central.";
-				});
-			} else {
-				$(".centralcenter").load("./content/central.html");
-				document.location.hash = "central.";
-			}
-
-
-			</script>
+			<div id="projectHead" style="position:fixed;right:0px;width:50%;z-index:10;background-color:white;padding-left:10px;padding-bottom:10px;box-shadow:0px 0px 5px black;overflow:hidden">
+				<h1 id="my-projects">My Projects</h1>
 			</div>
+		<div class="centralcontent" style="	top:120px;bottom:0px;">
+			<script>
+				var read = ["central","Square Infinity Website","UCCS Radio Mobile", "Fable Of Zelma", "Travel Quest", "Take The Tower","Wishing Well","Lost Hope", "9 to 5","Happy Little Cloud"];
+				var loc = ["central","squareInfinity","UCCSRadio","fableOfZelma","travelQuest","takeTheTower","wishingWell","lostHope","nine","happyLittleCloud"];
+
+				for (id in loc){
+					var temp = $("<div class='centralcenter' id='"+loc[id]+"'>").load("./content/"+loc[id]+".html");
+					$(".centralcontent").append($(temp));
+
+					if (loc[id] != "central"){
+						$("#projectHead").append($("<a class='proj-nav' href='#"+loc[id]+"'> "+read[id]+" </a>") );
+					}
+				}
+			</script>
 		</div>
 
 				<div class ="left-container">

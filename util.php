@@ -25,23 +25,29 @@
 	<div class="side-container">
 		<a href="./index.php">
 		<div class="profile">
-			<img src="./img/primaryPhoto.jpg" />
+			<img src="./img/gm_square.jpg" />
 			<h1 style="font-size:55px;">Garret </h1>
 			<h1 style="font-size:40px;margin-bottom:20px">Meier </h1>
 
 		</div>
 		</a>
 		<div class="info">
-			<a href="./about.php" style="color:black"><div class="navbutton" id="home">.about </div></a>
-			<a href="./projects.php" style="color:black"><div class="navbutton" id="home">.projects</div></a>
-			<a href="./blogs.php" style="color:black"><div class="navbutton" id="home">.blog</div></a>
-			<a href="./contact.php" style="color:black"><div class="navbutton" id="home">.contact</div></a>
+			<a href="./about" style="color:black"><div class="navbutton hover-action" id="home">.about </div></a>
+			<a href="./projects" style="color:black"><div class="navbutton hover-action" id="home">.projects</div></a>
+			<a href="./blogs.php" style="color:black"><div class="navbutton hover-action" id="home">.blog</div></a>
+			<!--<a href="./contact.php" style="color:black"><div class="navbutton hover-action" id="home">.contact</div></a>-->
+			<div class="navbutton" style="">
+				<a href="http://twitter.com/headin_thecloud" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="http://linkedin.com/pub/garret-meier/53/5a3/49/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+				<a href="http://github.com/ghmeier/" target="_blank"><i class="fa fa-github-square"></i></a>
+			</div>
 		</div>
+		<?php getBottom() ?>
 	</div>
 <?php } ?>
 
 <?php function getBottom() { ?>
-	<div class="watermark" style="position:absolute;display:block;width:100%;text-align:center;color:white;opacity:.4;bottom:10px;font-size:10px">
+	<div class="navbutton" style="position:absolute;bottom:17px;width:320px;font-size:15px;line-height:17px">
 		Email: meier.garret@gmail.com <br>Phone: 406-839-0906
 	</div>
 <?php } ?>
