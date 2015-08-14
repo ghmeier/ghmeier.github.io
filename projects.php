@@ -43,8 +43,8 @@
 			</div>
 		<div class="centralcontent" style="	top:120px;bottom:0px;">
 			<script>
-				var read = ["central","Square Infinity Website","UCCS Radio Mobile", "Fable Of Zelma", "Travel Quest", "Take The Tower","Wishing Well","Lost Hope", "9 to 5","Happy Little Cloud"];
-				var loc = ["central","squareInfinity","UCCSRadio","fableOfZelma","travelQuest","takeTheTower","wishingWell","lostHope","nine","happyLittleCloud"];
+				var read = ["central","gifasent","Boardem", "Playlist Generator","slackpay", "Fable Of Zelma", "Square Infinity Website", "Travel Quest", "UCCS Radio Mobile","Wishing Well","Lost Hope", "Happy Little Cloud"];
+				var loc = ["central","gifasent","boardem", "make-me-a-playlist", "slackpay", "fableOfZelma", "squareInfinity", "travelQuest", "UCCSRadio", "wishingWell","lostHope","happyLittleCloud"];
 
 				for (id in loc){
 					var temp = $("<div class='centralcenter' id='"+loc[id]+"'>").load("./content/"+loc[id]+".html");

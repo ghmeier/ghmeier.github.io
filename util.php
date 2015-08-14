@@ -38,7 +38,7 @@
 			<!--<a href="./contact.php" style="color:black"><div class="navbutton hover-action" id="home">.contact</div></a>-->
 			<div class="navbutton" style="">
 				<a href="http://twitter.com/headin_thecloud" target="_blank"><i class="fa fa-twitter"></i></a>
-				<a href="http://linkedin.com/pub/garret-meier/53/5a3/49/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+				<a href="http://linkedin.com/in/ghmeier" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 				<a href="http://github.com/ghmeier/" target="_blank"><i class="fa fa-github-square"></i></a>
 			</div>
 		</div>
