@@ -14,7 +14,7 @@
 		<meta property="og:site_name" content="Garret Meier">
 		<meta property="og:url" content="www.garretmeier.com">
 		<meta property="og:title" content="Garret Meier">
-		<meta name="description" content="A Sophomore in software engineering at Iowa State University, this is the one stop show for quick information about me.">
+		<meta name="description" content="A Junior in software engineering at Iowa State University, this is the one stop shop for quick information about me.">
 		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=no">
 	</head>
 </html>
