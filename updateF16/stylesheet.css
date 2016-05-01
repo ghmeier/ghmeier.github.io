@@ -7,6 +7,10 @@
 
 body{
     background-color:#DBD8C5;
+    height:100%;
+    width: 100%;
+    margin:0px;
+    padding:0px;
 }
 
 .title{
@@ -19,22 +23,76 @@ body{
     color: white;
 }
 
-.sub-text{
-    letter-spacing: .1em;
-    font-size: 1.5em;
-    padding-left: 10px;
-    color:darkgray;
-    margin-top: 0;
-    font-style: italic;
+.nav{
+    display: flex;ca
+    width: 100%;
+}
 
+.sub-text{
+    letter-spacing: .3em;
+    font-size: 1.5em;
+    color:#DBD8C5;
+    margin-top: 0;
+    font-style: bold;
+    text-transform: uppercase;
+    -webkit-flex:1;
+    -ms-flex:1;
+    flex:1;
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center;
+    transition-duration:0.3s;
+    transition-property:background-color;
+    border-radius: 1px;
+}
+
+#resume,
+#portfolio{
+    border-right:1px solid #DBD8C5;
+}
+
+
+.sub-text:hover{
+    background-color:  #A7637A;
 }
 
 .content-container{
-    width: 49vw;
+    width: 50vw;
+    height:100vh;
+    padding:10px;
+    display: flex;
+    flex-flow:column;
     background-color:#333F4D;
 }
 
+.header{
+    width:100%;
+    margin-right:51vw;
+    flex:0 1 auto;
+}
+
+.content{
+    width:100%;
+    flex:1 1 auto;
+    padding:15px;
+    overflow-y:scroll;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #DBD8C5;
+    border: solid #333F4D;
+    border-width: .375rem .375rem .375rem 0;
+    border-radius: 0 .375rem .375rem 0;
+}
+
+.content::-webkit-scrollbar {
+    width: .9375rem;
+}
+
+
+
 @media (min-width: 680px){
+
     @keyframes l-purp-slide{
         from {    margin-left:0%;}
         to {      margin-left:5%;}
@@ -136,7 +194,69 @@ body{
 }
 
 @media (max-width: 679px){
+    .body{
+        overflow: hidden;
+    }
+
     .triangle{
+        width:10vw;
+        height:16.7vh;
+        margin-left:90vw;
+        position: absolute;
+        border-left: 10vw solid transparent;
+    }
+
+    .l-purp{
+        border-bottom-color: #746F86;
+        border-left-color: #746F86;
+
+        animation-name: l-purp-slide;
+        animation-duration: .5s;
+    }
+
+    .m-purp{
+        border-bottom-color: #9D6E8E;
+        border-left-color: #9D6E8E;
+        animation-name: m-purp-slide;
+        animation-duration: 1s;
+        margin-top: 16.7vh;
+    }
+
+    .d-purp{
+        border-bottom-color: #A7637A;
+        border-left-color: #A7637A;
+        animation-name: d-purp-slide;
+        animation-duration: 1.5s;
+        margin-top: 33.4vh;
+    }
+
+    .l-pink{
+        border-bottom-color: #CF7382;
+        border-left-color: #CF7382;
+        animation-name: l-pink-slide;
+        animation-duration: 2s;
+        margin-top: 50.1vh;
+    }
+
+    .d-oran{
+        border-bottom-color: #B3695C;
+        border-left-color: #B3695C;
+        animation-name: d-oran-slide;
+        animation-duration: 2.5s;
+        margin-top: 66.8vh;
+    }
+
+    .l-oran{
+        border-bottom-color: #D07862;
+        border-left-color: #D07862;
+        animation-name: l-oran-slide;
+        animation-duration: 3s;
+        height:16.5vh;
+        margin-top: 83.5vh;
+    }
+
+    .content-container{
+        width: 90vw;
 
     }
 }
