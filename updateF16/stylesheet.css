@@ -24,12 +24,13 @@ body{
 }
 
 .nav{
-    display: flex;ca
+    display: flex;
     width: 100%;
 }
 
 .sub-text{
     letter-spacing: .3em;
+    padding-left:.3em;
     font-size: 1.5em;
     color:#DBD8C5;
     margin-top: 0;
@@ -44,6 +45,7 @@ body{
     transition-duration:0.3s;
     transition-property:background-color;
     border-radius: 1px;
+    cursor:pointer;
 }
 
 #resume,
@@ -89,9 +91,7 @@ body{
     width: .9375rem;
 }
 
-
-
-@media (min-width: 680px){
+@media (min-width: 961px){
 
     @keyframes l-purp-slide{
         from {    margin-left:0%;}
@@ -144,48 +144,36 @@ body{
     }
 
     .l-purp{
-        border-bottom-color: #746F86;
-        border-left-color: #746F86;
         margin-left:5%;
         animation-name: l-purp-slide;
         animation-duration: .5s;
     }
 
     .m-purp{
-        border-bottom-color: #9D6E8E;
-        border-left-color: #9D6E8E;
         margin-left:10%;
         animation-name: m-purp-slide;
         animation-duration: 1s;
     }
 
     .d-purp{
-        border-bottom-color: #A7637A;
-        border-left-color: #A7637A;
         margin-left:15%;
         animation-name: d-purp-slide;
         animation-duration: 1.5s;
     }
 
     .l-pink{
-        border-bottom-color: #CF7382;
-        border-left-color: #CF7382;
         margin-left:20%;
         animation-name: l-pink-slide;
         animation-duration: 2s;
     }
 
     .d-oran{
-        border-bottom-color: #B3695C;
-        border-left-color: #B3695C;
         margin-left:25%;
         animation-name: d-oran-slide;
         animation-duration: 2.5s;
     }
 
     .l-oran{
-        border-bottom-color: #D07862;
-        border-left-color: #D07862;
         margin-left:30%;
         animation-name: l-oran-slide;
         animation-duration: 3s;
@@ -193,7 +181,7 @@ body{
 
 }
 
-@media (max-width: 679px){
+@media (max-width: 960px){
     .body{
         overflow: hidden;
     }
@@ -207,48 +195,35 @@ body{
     }
 
     .l-purp{
-        border-bottom-color: #746F86;
-        border-left-color: #746F86;
-
         animation-name: l-purp-slide;
         animation-duration: .5s;
     }
 
     .m-purp{
-        border-bottom-color: #9D6E8E;
-        border-left-color: #9D6E8E;
         animation-name: m-purp-slide;
         animation-duration: 1s;
         margin-top: 16.7vh;
     }
 
     .d-purp{
-        border-bottom-color: #A7637A;
-        border-left-color: #A7637A;
         animation-name: d-purp-slide;
         animation-duration: 1.5s;
         margin-top: 33.4vh;
     }
 
     .l-pink{
-        border-bottom-color: #CF7382;
-        border-left-color: #CF7382;
         animation-name: l-pink-slide;
         animation-duration: 2s;
         margin-top: 50.1vh;
     }
 
     .d-oran{
-        border-bottom-color: #B3695C;
-        border-left-color: #B3695C;
         animation-name: d-oran-slide;
         animation-duration: 2.5s;
         margin-top: 66.8vh;
     }
 
     .l-oran{
-        border-bottom-color: #D07862;
-        border-left-color: #D07862;
         animation-name: l-oran-slide;
         animation-duration: 3s;
         height:16.5vh;
@@ -257,6 +232,35 @@ body{
 
     .content-container{
         width: 90vw;
-
     }
+}
+
+.l-purp{
+        border-bottom-color: #746F86;
+        border-left-color: #746F86;
+}
+
+.m-purp{
+        border-bottom-color: #9D6E8E;
+        border-left-color: #9D6E8E;
+}
+
+.d-purp{
+        border-bottom-color: #A7637A;
+        border-left-color: #A7637A;
+}
+
+.l-pink{
+        border-bottom-color: #CF7382;
+        border-left-color: #CF7382;
+}
+
+.d-oran{
+        border-bottom-color: #B3695C;
+        border-left-color: #B3695C;
+}
+
+.l-oran{
+        border-bottom-color: #D07862;
+        border-left-color: #D07862;
 }
