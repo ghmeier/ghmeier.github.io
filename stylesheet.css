@@ -218,6 +218,14 @@ a{
         overflow: hidden;
     }
 
+    .title{
+        font-size: 1.5em
+    }
+
+    .sub-text{
+        font-size: 1em;
+    }
+
     #social-lg{
         display: none;
     }
