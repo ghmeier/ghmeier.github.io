@@ -31,7 +31,7 @@ body{
 .sub-text{
     letter-spacing: .3em;
     padding-left:.3em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color:#DBD8C5;
     margin-top: 0;
     text-decoration: none;
@@ -48,8 +48,7 @@ body{
     cursor:pointer;
 }
 
-#res-btn,
-#port-btn{
+.r-border{
     border-right:1px solid #DBD8C5;
 }
 
@@ -78,6 +77,7 @@ body{
     flex:1 1 auto;
     padding:15px;
     overflow-y:scroll;
+    overflow-x:hidden;
     color:white;
 }
 
@@ -151,6 +151,10 @@ a{
         to {      margin-left:30%;}
     }
 
+    #social-sm{
+        display: none
+    }
+
     .triangle{
         position:absolute;
         width:0;
@@ -212,6 +216,10 @@ a{
 @media (max-width: 960px){
     .body{
         overflow: hidden;
+    }
+
+    #social-lg{
+        display: none;
     }
 
     .triangle{
