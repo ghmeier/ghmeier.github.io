@@ -48,11 +48,19 @@ body{
     cursor:pointer;
 }
 
+.spacer{
+    margin-left:10px;
+    margin-right:10px;
+}
+
 .r-border{
     border-right:1px solid #DBD8C5;
 }
 
-
+.t-border{
+    border-top: 1px solid #DBD8C5;
+    margin-top: 5px;
+}
 .sub-text:hover{
     background-color: #2b2c85;/*#A7637A;*/
 }
