@@ -111,6 +111,7 @@ body{
 
 .content p{
     letter-spacing: .05em;
+    line-height: 1.7em;
 }
 .content::-webkit-scrollbar-thumb {
     background: #DBD8C5;
