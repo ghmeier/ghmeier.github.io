@@ -63,7 +63,7 @@ body{
     padding:10px;
     display: flex;
     flex-flow:column;
-    background-color:#4a213a;/*2f266a;/*333F4D;*/
+    background-color:#4a213a;
 }
 
 .header{
@@ -75,19 +75,19 @@ body{
 .content{
     width:100%;
     flex:1 1 auto;
-    padding:15px;
+    padding:30px;
     overflow-y:scroll;
     overflow-x:hidden;
     color:white;
 }
 
 .content h1{
-    color: #2b627e;
+    color: white;
     margin-bottom: 10px;
 }
 
 .content h2{
-    color: #2b4882;
+    color: white;
     text-transform: uppercase;
     font-size: 1.3em;
     letter-spacing: .15em;
