@@ -30,7 +30,7 @@ body{
 .sub-text{
     letter-spacing: .3em;
     padding-left:.3em;
-    font-size: 1.3em;
+    font-size: 1.0em;
     color:#DBD8C5;
     margin-top: 0;
     text-decoration: none;
@@ -97,7 +97,6 @@ body{
 
 .content p{
     letter-spacing: .05em;
-    margin-left: 40px;
 }
 .content::-webkit-scrollbar-thumb {
     background: #DBD8C5;
@@ -110,11 +109,15 @@ body{
     width: .9375rem;
 }
 
+
 a{
     color:#DBD8C5;
 }
 
 @media (min-width: 961px){
+    .content p{
+        margin-left: 40px;
+    }
 
     @keyframes l-purp-slide{
         from {    margin-left:0%;}
@@ -218,7 +221,11 @@ a{
     }
 
     .sub-text{
-        font-size: 1em;
+        font-size: 0.8em;
+    }
+
+    .link-list{
+        padding-left: 0px;
     }
 
     #social-lg{
@@ -310,7 +317,7 @@ a{
 }
 
 .link-list li{
-    margin-bottom: 4px;
+    margin-bottom: 10px;
 }
 
 a{
