@@ -15,9 +15,8 @@ body{
 
 .title{
     text-transform: uppercase;
-    letter-spacing: .2em;
+    letter-spacing: .05em;
     font-size: 3em;
-    padding-left: 10px;
     font-weight: 500;
     margin-bottom: .2em;
     color: white;
@@ -75,7 +74,7 @@ body{
 .content{
     width:100%;
     flex:1 1 auto;
-    padding:30px;
+    padding: 0px 30px 0px 30px;
     overflow-y:scroll;
     overflow-x:hidden;
     color:white;
@@ -96,13 +95,9 @@ body{
     text-decoration: none;
 }
 
-.content hr{
-    margin-left:10px;
-    margin-right:10px;
-}
-
 .content p{
     letter-spacing: .05em;
+    margin-left: 40px;
 }
 .content::-webkit-scrollbar-thumb {
     background: #DBD8C5;
@@ -307,4 +302,21 @@ a{
 .l-oran{
         border-bottom-color: #482b89;/*7e285b;/*D07862;*/
         border-left-color: #482b89;/*7e285b;/*D07862;*/
+}
+
+.link-list {
+    letter-spacing: .05em;
+    list-style-type: none;
+}
+
+.link-list li{
+    margin-bottom: 4px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
